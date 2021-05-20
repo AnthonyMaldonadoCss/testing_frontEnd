@@ -1,0 +1,34 @@
+.video__principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video{
+    display: flex;
+}
+
+.texto__video{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 55px;
+   width: 555px;
+    background-color: antiquewhite;
+}
+.texto__video h3, p {
+    padding: 1%;
+}
+
+@media (max-width: 57.5em) {
+   
+    .texto__video {
+        padding: 5%;
+        margin-left: 0;
+    }
+
+    .video {
+        margin-bottom: 15px;
+    }
+}
