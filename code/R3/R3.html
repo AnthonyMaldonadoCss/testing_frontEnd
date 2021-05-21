@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/sources/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/sources/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/sources/favicon_io/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&display=swap" 10
+        rel="stylesheet">
+
 
     <title>testing - R3</title>
 </head>
@@ -14,10 +21,12 @@
 <body>
     <section class="video__principal">
         <div class="video">
-            <video width="390" preload="metadata" poster="/beach-1852945_1920.jpg" muted controls>
-                <source src="/Waves.mp4" type="video/mp4">
+            <video id="play_video" width="390" preload="metadata" poster="/beach-1852945_1920.jpg" muted>
+                <source src="" type="video/mp4">
             </video>
+            <input type="button" id="boton" value="Ver video">
         </div>
+
         <div class="texto__video">
             <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dicta autem repellendus voluptatem
@@ -31,6 +40,15 @@
             </p>
         </div>
     </section>
+
+    <div class="modal">
+        <input type="button" id="button__close" value="cerrar">
+        <h4>Haz click afuera para cerrar</h4>
+        <div class="modal__content">
+            <video src="/Waves.mp4" width="390" preload="metadata" autoplay controls></video>
+        </div>
+    </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>
